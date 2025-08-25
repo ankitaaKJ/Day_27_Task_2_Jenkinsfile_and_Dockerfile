@@ -8,7 +8,7 @@ pipeline{
    stages {
       stage ('Exec And check website'){
           steps{
-            sh 'curl http://192.168.0.104:1000/'
+            sh 'curl -I http://192.168.0.104:1000/'
           }
       }
   }
