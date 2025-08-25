@@ -6,9 +6,9 @@ pipeline{
    } 
    
    stages {
-      stage ('Exec Test cmd'){
+      stage ('Exec And check website'){
           steps{
-            sh 'echo hellooooo'
+            sh 'curl http://192.168.0.104:1000/'
           }
       }
   }
